@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.gnupg:
     ~/.dotfiles: ''
     ~/.tmux.conf:
     ~/.vim:
