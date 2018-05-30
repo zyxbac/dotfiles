@@ -1,0 +1,33 @@
+
+borderwidth 2
+color activeborder blue
+color inactiveborder darkblue
+gap 15 0 0 0
+
+# key mappings
+unbind-key  CS-Left
+unbind-key  CS-Right
+unbind-key  CS-Up
+unbind-key  CS-Down
+unbind-key  C-Left
+unbind-key  C-Right
+unbind-key  C-Up
+unbind-key  C-Down
+
+bind-key 4-Left pointer-move-left
+bind-key 4-Right pointer-move-right
+bind-key 4-Up pointer-move-up
+bind-key 4-Down pointer-move-down
+bind-key 4S-Left pointer-move-left-big
+bind-key 4S-Right pointer-move-right-big
+bind-key 4S-Up pointer-move-up-big
+bind-key 4S-Down pointer-move-down-big
+
+# application menu
+command gajim	gajim
+command firefox	firefox
+command libreoffice	libreoffice
+command netbeans	"./bin/netbeans/netbeans82/bin/netbeans --jdkhome /usr/local/jdk-1.8.0/"
+
+# inherit current selected group
+sticky yes

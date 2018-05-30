@@ -6,9 +6,15 @@
 - clean: ['~']
 
 - link:
+    ~/.Xdefaults:
+    ~/.Xprofile:
+    ~/.Xresources:
+    ~/.cwmrc:
+    ~/.dotfiles: ''
+    ~/.fehbg:
     ~/.gitconfig:
     ~/.gnupg:
-    ~/.dotfiles: ''
+    ~/.gtkrc:
     ~/.tmux.conf:
     ~/.vim:
 
