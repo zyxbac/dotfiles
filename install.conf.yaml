@@ -15,6 +15,18 @@
     ~/.gitconfig:
     ~/.gnupg:
     ~/.gtkrc:
+    ~/.irssi:
+    ~/.kshrc:
+    ~/.login:
+    ~/.mutt:
+    ~/.muttrc:
+    ~/.profile:
     ~/.tmux.conf:
     ~/.vim:
+    ~/.xsession:
+
+- shell:
+  # the following have to run after linking ~/.gitconfig
+  - git submodule update --init --recursive
+  - git submodule foreach git pull --recurse-submodules origin master
 

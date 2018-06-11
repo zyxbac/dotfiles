@@ -1,0 +1,84 @@
+set imap_check_subscribed
+set header_cache='~/.mutt/hcache'
+set message_cachedir='~/.mutt/mcache'
+unset imap_passive
+set imap_keepalive=300
+set mail_check=122
+set timeout=20
+
+#set    reverse_name
+#set    signature='~/.signature'
+set     abort_nosubject=no                      # allow empty subject
+set     abort_unmodified=no                     # send menu after not editing
+set     allow_8bit                              # do not base64 or mangle msgs
+set     askcc                                   # ask for cc
+set     attribution="On %M %N, %f wrote:  %n(%a)@%d:"           # attribution in replies
+        # it is important to always edit the mails with headers.
+        # only with headers in the editor you can see what you are
+        # sending at first glance. i think the compose screen is not
+        # verbose enough, and i do not read the whole screen before
+        # hitting the 'y' key all the time ;-)
+set     edit_headers
+
+
+set editor="vim -c 'set spell spelllang=en'"
+set edit_headers = yes
+set     forw_format="Fwd: %s"                   # traditional Fwd: subject
+set     include=ask-yes                         # include original in reply
+set     mime_forward                            # forward whole mime attachmts
+#set    mime_forward_decode                     # decode fwd to text/plain
+set     mime_forward_rest                       # forward the rest of mime msg
+set     recall=ask-yes                          # ask to recall postponed
+set     write_bcc                               # Bcc header in file to send
+
+
+set     ascii_chars                             # ascii chars in threadmarks
+set     markers=no                              # wrap without plus signs
+set     pager_context=3                         # page to page line context
+        # format string for pager - nice
+set     pager_format="[%4C/%4m] (%S%Z) %%=%N $i %> [%lL]"
+set     pager_index_lines=6                     # mini-index on pager top
+set     pager_stop                              # don't auto-go to next msg
+set     sort=threads                            # default sort order
+set     tilde                                   # pad empty lines like vi
+alternative_order text/plain text/html text     # multipart/alt precedence
+
+
+set     quit=ask-yes
+set     date_format="%Y.%m.%d %H:%M:%S %z"
+#unset  help                                    # no ui spam
+#set    index_format="%Z %{%D} %2N %4l %-20.20a %s"
+set     index_format="%Z %[%D] %2N %4l %-20.20F %s"
+
+my_hdr X-Arbitrary-Number-Of-The-Day: 42
+        # header config
+        # quench unwanted headers in reader
+ignore          *
+unignore        return-path from: to cc bcc subject resent-by date
+unignore        authenticated-sender apparently-from
+unignore        x-address x-organisation reply-to
+unignore        mail-followup-to user-agent x-mailer
+unignore        x-spammer x-bogosity x-spam-status
+unignore        message-id
+                # sort headers
+hdr_order       Return-Path: Message-ID: \
+                From: Resent-By: Reply-To: X-Organisation: \
+                X-Address: To: Cc: Bcc: \
+                Date: X-Bogosity: Subject:
+
+set smart_wrap = yes
+
+source ~/.mutt/account
+source ~/.mutt/gpg.rc
+source ~/.mutt/colors
+
+set alias_file=~/.mutt/aliases
+set sort_alias=alias
+set reverse_alias=yes
+source ~/.mutt/aliases
+
+set pgp_use_gpg_agent = yes
+set pgp_autosign
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
+

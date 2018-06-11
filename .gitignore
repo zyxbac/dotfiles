@@ -18,8 +18,8 @@ Session.vim
 
 .extra
 .gitconfig
-.gnupg
-!.gnupg/gpg*.conf
+gnupg
+!gnupg/gpg*.conf
 .i3/logfile
 .irssi/away.log
 .irssi/config*
@@ -28,5 +28,9 @@ Session.vim
 .irssi/saved_colors
 .irssi/scripts/autorun/blocker.pl
 .irssi/startup
+mutt/account
+mutt/aliases
+mutt/hcache
+mutt/mcache
 .rainbow_oauth
 .nginx/conf.d/*

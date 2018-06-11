@@ -2,6 +2,8 @@
 borderwidth 2
 color activeborder blue
 color inactiveborder darkblue
+#snapdist 16
+fontname fixed-13
 gap 15 0 0 0
 
 # key mappings
