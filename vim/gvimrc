@@ -1,4 +1,12 @@
-set guifont=DejaVuSansMono:h14
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_macvim")
+    set guifont=Menlo\ Regular:h14
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
 set gcr=n-v-c:block-Cursor/block-Cursor-blinkon0,i-ci:hor20-Cursor-blinkwait2000-blinkon1500-blinkoff500
 
 " Hide Toolbar from MacVim
