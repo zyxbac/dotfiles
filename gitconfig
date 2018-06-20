@@ -193,3 +193,5 @@
 [include]
 	path = ~/.gitconfig_local
 
+[gpg]
+	program = /usr/local/bin/gpg2
