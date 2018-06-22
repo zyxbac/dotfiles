@@ -21,6 +21,7 @@
     ~/.mutt:
     ~/.muttrc:
     ~/.profile:
+    ~/.rainbow_config.json:
     ~/.tmux.conf:
     ~/.vim:
     ~/.xsession:
