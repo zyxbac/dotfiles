@@ -12,7 +12,7 @@ set     abort_nosubject=no                      # allow empty subject
 set     abort_unmodified=no                     # send menu after not editing
 set     allow_8bit                              # do not base64 or mangle msgs
 set     askcc                                   # ask for cc
-set     attribution="On %M %N, %f wrote:  %n(%a)@%d:"           # attribution in replies
+set     attribution="On %D, %f wrote:"          # attribution in replies
         # it is important to always edit the mails with headers.
         # only with headers in the editor you can see what you are
         # sending at first glance. i think the compose screen is not
