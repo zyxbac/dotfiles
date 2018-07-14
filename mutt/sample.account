@@ -10,6 +10,7 @@ set realname=
 #set envelope_from =
 set hidden_host
 #set use_domain =
+#set hostname = ""
 
 set folder=imaps://mail.messagingengine.com/
 set spoolfile=+INBOX
