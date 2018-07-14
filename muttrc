@@ -12,7 +12,7 @@ set     abort_nosubject=no                      # allow empty subject
 set     abort_unmodified=no                     # send menu after not editing
 set     allow_8bit                              # do not base64 or mangle msgs
 set     askcc                                   # ask for cc
-set     attribution="On %D, %f wrote:"          # attribution in replies
+set     attribution="%f wrote on %D:"          # attribution in replies
         # it is important to always edit the mails with headers.
         # only with headers in the editor you can see what you are
         # sending at first glance. i think the compose screen is not
@@ -75,10 +75,13 @@ source ~/.mutt/colors
 set alias_file=~/.mutt/aliases
 set sort_alias=alias
 set reverse_alias=yes
-source ~/.mutt/aliases
+source $alias_file
 
 set pgp_use_gpg_agent = yes
 set pgp_autosign
+set pgp_self_encrypt_as = 0x7B8264E9129E4672
+#set pgp_default_key = 0x7B8264E9129E4672
+set pgp_self_encrypt = yes
 set crypt_autosign = yes
 set crypt_replyencrypt = yes
 
