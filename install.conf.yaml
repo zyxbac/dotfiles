@@ -23,6 +23,7 @@
     ~/.profile:
     ~/.rainbow_config.json:
     ~/.tmux.conf:
+    ~/.tmux-colors-solarized:
     ~/.vim:
     ~/.xsession:
 

@@ -24,7 +24,7 @@ XTerm*loginShell:true
 !!cyan      #2aa198  6/6 cyan      37 #00afaf 60 -35 -05  42 161 152 175  74  63
 !!green     #859900  2/2 green     64 #5f8700 60 -20  65 133 153   0  68 100  60
 
-#define S_base04        #00171d
+!!#define S_base04        #00171d
 #define S_base03        #002b36
 #define S_base02        #073642
 #define S_base01        #586e75
@@ -38,7 +38,7 @@ XTerm*loginShell:true
 !!URxvt*background:       [90]S_base04
 *foreground:            S_base0
 !!*depth:                 32
-!!*fading:                40
+*fading:                40
 *fadeColor:             S_base03
 *cursorColor:           S_base1
 *pointerColorBackground:S_base01

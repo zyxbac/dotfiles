@@ -168,16 +168,18 @@ endif " has("autocmd")
 
 syntax enable
 if has('gui_running')
-" set transparency=3
-  " fix js regex syntax
-  set regexpengine=1
-  syntax enable
+    set background=light
+    " set transparency=3
+    " fix js regex syntax
+    set regexpengine=1
+else
+    set background=dark
 endif
-set background=dark
-let g:solarized_termcolors=256
-let g:solarized_termtrans=1
+" let g:solarized_termcolors=256
+" let g:solarized_termtrans=1
 " let g:hybrid_use_Xresources = 1
 " let g:rehash256 = 1
+" let g:solarized_bold=0
 colorscheme solarized
 set guifont=Inconsolata:h15
 set guioptions-=L
