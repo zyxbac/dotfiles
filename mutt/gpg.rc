@@ -84,21 +84,21 @@ set pgp_list_secring_command="gpg2 --no-verbose --batch --quiet --with-colons --
 set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 
 
-
-####
-###
-##
-
 #
-# pgp
+# pgp configuration
 #
-##set    pgp_autosign                            # autosign all outgoing mails
-set     pgp_replyencrypt                        # autocrypt replies to crypted
-set     pgp_replysign                           # autosign replies to signed
-set     pgp_replysignencrypted                  # autosign replies to sig/crypt
+set pgp_use_gpg_agent = yes
+set crypt_autopgp = yes
+set crypt_autosign = yes
+set crypt_replyencrypt = yes
+set pgp_autosign                       # autosign all outgoing mails
+set pgp_replyencrypt                   # autocrypt replies to crypted
+set pgp_replysign                      # autosign replies to signed
+set pgp_replysignencrypted             # autosign replies to sig/crypt
+set pgp_self_encrypt = yes
+set postpone_encrypt = yes
 #set     pgp_retainable_sigs                     # nested mime fmt sigs
-set     pgp_sign_as=0x7B8264E9129E4672                  # primary keyid
 #set     pgp_timeout=2400                        # passphrase timeout
-set     pgp_sort_keys=trust                     # sort order
+set  pgp_sort_keys=trust                # sort order
 #unset   pgp_show_unusable                       # don't display revoked et al.
 

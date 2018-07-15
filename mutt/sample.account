@@ -18,4 +18,11 @@ mailboxes +INBOX
 set postponed="+INBOX/Drafts"
 set record="+INBOX/Sent Items"
 set trash="=Trash"
-#set pgp_sign_as =
+save-hook . "=Archives"
+macro index,pager A ":set confirmappend=no delete=yes\n<save-message>=Archives\n<sync-mailbox>:set confirmappend=yes delete=ask-yes\n"
+
+#set pgp_default_key =   # primary keyid
+#set pgp_self_encrypt_as =
+
+alternates -group me my.name@example.com other.mail@example.org
+subscribe mailing-list@example.com

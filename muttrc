@@ -78,12 +78,3 @@ set sort_alias=alias
 set reverse_alias=yes
 source $alias_file
 
-set pgp_use_gpg_agent = yes
-set pgp_autosign
-set pgp_self_encrypt_as = 0x7B8264E9129E4672
-#set pgp_default_key = 0x7B8264E9129E4672
-set pgp_self_encrypt = yes
-set postpone_encrypt = yes
-set crypt_autosign = yes
-set crypt_replyencrypt = yes
-
