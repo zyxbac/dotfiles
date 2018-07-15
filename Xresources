@@ -85,24 +85,25 @@ XTerm*loginShell:true
 *color7:                S_base2
 *color15:               S_base3
 
-!!*utf8:                  1
-!!*saveLines:             999999
+*utf8:                  1
+*saveLines:             999999
 
 !-- Xft settings -- !
-!!Xft.dpi:        144
-!!Xft.rgba:       rgb
-!!Xft.autohint:   0
-!!Xft.lcdfilter:  lcddefault
-!!Xft.hintstyle:  hintfull
-!!Xft.hinting:    1
-!!Xft.antialias:  1
+Xft.dpi:        96
+Xft.rgba:       rgb
+Xft.autohint:   true
+Xft.lcdfilter:  lcddefault
+Xft.hintstyle:  hintfull
+Xft.hinting:    true
+Xft.antialias:  true
 
 ! -- Fonts -- !
+*font: xft:DejaVu Sans Mono, xft:Noto Emoji
 !!URxvt.font: xft:Inconsolata:pixelsize=27:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
 !!URxvt.boldFont: xft:Inconsolata:style=bold:pixelsize=27:antialias=true:hinting=full,xft:Symbola:pixelsize=19:antialias=true:hinting=full
 
-!!*faceSize:              10
-!!*bellIsUrgent:          true
+*faceSize:              10
+*bellIsUrgent:          true
 
 !! scroll
 !! do not scroll with output
@@ -118,7 +119,7 @@ XTerm*loginShell:true
 !!URxvt.secondaryWheel:   1
 
 !! scrollbar
-!!*scrollBar:             false
+*scrollBar:             false
 
 !!URxvt*termName:         rxvt
 
