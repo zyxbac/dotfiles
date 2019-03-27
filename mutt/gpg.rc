@@ -87,6 +87,7 @@ set pgp_good_sign="^\\[GNUPG:\\] GOODSIG"
 #
 # pgp configuration
 #
+unset smime_is_default
 set pgp_use_gpg_agent = yes
 set crypt_autopgp = yes
 set crypt_autosign = yes
