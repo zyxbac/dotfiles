@@ -46,10 +46,11 @@ alternative_order text/plain text/html text     # multipart/alt precedence
 
 
 set     quit=ask-yes
-set     date_format="%Y.%m.%d %H:%M:%S %z"
+set     date_format="%Y-%b-%d %I:%M:%S %z"
 #unset  help                                    # no ui spam
 #set    index_format="%Z %{%D} %2N %4l %-20.20a %s"
-set     index_format="%Z %[%D] %2N %4l %-20.20F %s"
+#set     index_format="%Z %?[d?%[%H:%M]&%[%Y-%b-%d]? %2N %4l %-20.20F %s"
+set     index_format="%Z %[%Y-%b-%d] %2N %4l %-20.20F %s"
 
 my_hdr X-Arbitrary-Number-Of-The-Day: 42
         # header config
